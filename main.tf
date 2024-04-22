@@ -1,5 +1,5 @@
 resource "aws_instance" "rabbitmq" {
-  ami                    = data.aws_ami.centos-8-ami.image_id
+  ami                    = "ami-0f3c7d07486cad139"
   instance_type          = var.instance_type
   subnet_id              = var.subnets[0]
 #  vpc_security_group_ids = [aws_security_group.sg.id]
